@@ -361,6 +361,9 @@ PRODUCT_PACKAGES += \
 TARGET_SCREEN_DENSITY := 420
 
 # Sensors
+PRODUCT_PACKAGES += \
+    sensors.rhodep
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
