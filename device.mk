@@ -385,6 +385,7 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
+    hardware/samsung \
     vendor/qcom/opensource/data-ipa-cfg-mgr-legacy
 
 # System Helper
