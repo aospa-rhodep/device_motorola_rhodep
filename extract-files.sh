@@ -58,6 +58,10 @@ function blob_fixup() {
         system_ext/etc/permissions/moto-ims-ext.xml|system_ext/etc/permissions/moto-telephony.xml)
             sed -i "s#/system/#/system_ext/#" "${2}"
             ;;
+        vendor/etc/init/android.hardware.nfc@1.2-service.sec.rc)
+            sed -i "s/sec/samsung/g" "${2}"
+            sed -i "s/class hal/override\n    class hal/" "${2}"
+            ;;
     esac
 }
 
