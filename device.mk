@@ -191,6 +191,7 @@ PRODUCT_PACKAGES += \
     init.qti.qcv.rc \
     init.qti.qcv.sh \
     init.target.rc \
+    init.qcom.recovery.rc \
     init.vendor.st21nfc.rc \
     ueventd.rhodep.rc
 
