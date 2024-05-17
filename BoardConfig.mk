@@ -75,6 +75,33 @@ KERNEL_CUSTOM_LLVM := true
 KERNEL_FULL_LLVM := true
 KERNEL_DEFCONFIG := rhodep_defconfig
 
+BOARD_RECOVERY_KERNEL_MODULES := \
+	$(KERNEL_MODULES_OUT)/utags.ko \
+	$(KERNEL_MODULES_OUT)/mmi_relay.ko \
+	$(KERNEL_MODULES_OUT)/mmi_info.ko \
+	$(KERNEL_MODULES_OUT)/mmi_annotate.ko \
+	$(KERNEL_MODULES_OUT)/sensors_class.ko \
+	$(KERNEL_MODULES_OUT)/moto_f_usbnet.ko \
+	$(KERNEL_MODULES_OUT)/touchscreen_mmi.ko \
+	$(KERNEL_MODULES_OUT)/goodix_brl_mmi.ko \
+	$(KERNEL_MODULES_OUT)/mmi_sys_temp.ko \
+	$(KERNEL_MODULES_OUT)/cw2217b_fg_mmi.ko \
+	$(KERNEL_MODULES_OUT)/sm5602_fg_mmi.ko \
+	$(KERNEL_MODULES_OUT)/tcpc_class.ko \
+	$(KERNEL_MODULES_OUT)/tcpc_rt1711h.ko \
+	$(KERNEL_MODULES_OUT)/tcpc_sgm7220.ko \
+	$(KERNEL_MODULES_OUT)/adapter_class.ko \
+	$(KERNEL_MODULES_OUT)/rt_pd_manager.ko \
+	$(KERNEL_MODULES_OUT)/sgm4154x_charger.ko \
+	$(KERNEL_MODULES_OUT)/bq2589x_charger.ko \
+	$(KERNEL_MODULES_OUT)/bq2597x_mmi_iio.ko \
+	$(KERNEL_MODULES_OUT)/mmi_charger.ko \
+	$(KERNEL_MODULES_OUT)/mmi_discrete_charger_class.ko \
+	$(KERNEL_MODULES_OUT)/mmi_discrete_charger.ko \
+	$(KERNEL_MODULES_OUT)/leds_aw99703.ko \
+	$(KERNEL_MODULES_OUT)/leds_lm3697.ko \
+	$(KERNEL_MODULES_OUT)/mmi_discrete_turbo_charger.ko
+
 BOARD_VENDOR_KERNEL_MODULES := \
 	$(KERNEL_MODULES_OUT)/wcd938x_dlkm.ko  \
 	$(KERNEL_MODULES_OUT)/wcd_core_dlkm.ko  \
